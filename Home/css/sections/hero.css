@@ -137,7 +137,10 @@
 .linguagens-utilizadas img {
     width: 5vw;
 }
-
+.to-do {
+    width: 100%;
+    height: auto;
+}
 @media (min-aspect-ratio: 16/9) {
     .back-video {
         width: 100%;
@@ -169,6 +172,6 @@
         flex-direction: column;
     }
     .projects-card {
-        margin-top: 2em;
+        margin-top: 2em ;
     }
 }
