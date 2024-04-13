@@ -3,33 +3,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Projetos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
 
     <section class="hero">
-        <div class="hero__content">
-            
-        </div>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assets/video.mp4"/>
+        </video>
+        <section class="content">
+            <h1>Bem-Vindo</h1>
+            <a href="">Arraste para baixo</a>
+            <br/>
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </section>
     </section>
 
     <section class="projects">
         <div class="projects-container">
             <div class="projects-card">
+                <div class="card">
+                    <img src="caminho" alt="PreviewProjeto"/>
+                    <span>Projeto</span>
+                    <button class="redirect" onclick="Projeto(1)">Veja</button>
+                    <div class="linguagens-utilizadas">
 
+                    </div>
+                </div>
             </div>
             <div class="projects-card">
-
+                <div class="card">
+                    <img src="caminho" alt="PreviewProjeto"/>
+                    <span>Projeto</span>
+                    <button class="redirect" onclick="Projeto(2)">Veja</button>
+                    <div class="linguagens-utilizadas">
+                        
+                    </div>
+                </div>
             </div>
             <div class="projects-card">
-
+                <div class="card">
+                    <img src="caminho" alt="PreviewProjeto"/>
+                    <span>Projeto</span>
+                    <button class="redirect" onclick="Projeto(3)">Veja</button>
+                    <div class="linguagens-utilizadas">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="to-do">
         <div class="projects-planning">
-
+            
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
