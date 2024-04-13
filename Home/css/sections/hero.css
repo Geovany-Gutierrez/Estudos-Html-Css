@@ -1,3 +1,21 @@
+@keyframes seta {
+    0% {
+        transform: translateY(2vh);
+    }
+
+    25% {
+        transform: translateY(1vh);
+    }
+
+    50% {
+        transform: translateY(1vh);
+    }
+
+    100% {
+        transform: translateY(2vh);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -42,11 +60,13 @@
     margin-top: 20px;
     transition: 0.5s ease-in;
 }
+
 .content i {
     font-size: 72px;
     font-weight: 700;
     color: #fff;
 }
+
 .content a:hover {
     background-color: white;
     color: black;
@@ -57,6 +77,65 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects {
+    width: 100%;
+    height: 100vh;
+}
+
+.projects-container {
+    margin-top: 8%;
+}
+
+.projects-card {
+    text-align: center;
+    background: #e6e6e6;
+    width: 420px;
+    height: 500px;
+    -webkit-box-shadow: 14px 10px 10px -7px rgba(44, 44, 44, 0.14);
+    -moz-box-shadow: 14px 10px 10px -7px rgba(44, 44, 44, 0.14);
+    box-shadow: 14px 10px 10px -7px rgba(44, 44, 44, 0.14);
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    padding: 4%;
+}
+.card img {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 4%;
+}
+.card span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.card button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    border: 0.8px solid #020202;
+    border-radius: 12px;
+    padding: 12px;
+}
+.linguagens-utilizadas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10vh;
+}
+.linguagens-utilizadas img {
+    width: 5vw;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -70,5 +149,26 @@
     .back-video {
         width: 100%;
         height: 100vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .back-video {
+        display: none;
+    }
+
+    .hero {
+        background: linear-gradient(to right, #020202, #1d1c1c);
+    }
+
+    .hero i {
+        animation: seta 4s infinite;
+    }
+    .projects-container {
+        flex: 1;
+        flex-direction: column;
+    }
+    .projects-card {
+        margin-top: 2em;
     }
 }
