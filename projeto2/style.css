@@ -69,17 +69,56 @@ section nav ul li a {
 section nav ul li a:hover {
     color: var(--cores-hover);
 }
+
 section nav .icons i {
     margin: 0 4px;
     cursor: pointer;
     font-size: 18px;
     transition: 0.3s;
 }
+
 section nav .icons i:hover {
     color: var(--cores-hover);
 }
+
 section .main .main_content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+section .main .main_content .main_text h1 {
+    font-size: 90px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient(to right, --cor-span, --cores-titulo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 45px;
+    left: 5%;
+}
+
+section .main .main_content .main_text h1 span {
+    font-size: 70px;
+    background: linear-gradient(to right, --cor-span, --cores-titulo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main_content .main_text p {
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+}
+.section .main .main_content .main_image img {
+    width: 650px;
+    position: relative;
+    left: 20px;
+    top: 75px;
 }
