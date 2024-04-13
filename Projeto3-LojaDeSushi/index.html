@@ -2,36 +2,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="icon" type="image/png" href="./public/sushi-4.png" />
     <title>Sushiman</title>
   </head>
-  <body>
+  <body>  
     <header>
       <nav class="header__nav">
         <div class="header__logo">
-          <h4>Sushiman</h4>
+          <h4 data-aos="fade-down">Sushiman</h4>
           <div class="header__logo-overlay"></div>
-          <ul class="header__menu">
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#food">Food</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about-us">About us</a></li>
-            <li>
-              <img src="assets/search.svg" alt="search" />
-            </li>
-          </ul>
-          <ul class="header__menu-mobile">
-            <li>
-              <img src="assets/menu.svg" alt="menu" />
-            </li>
-          </ul>
         </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#food">Food</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          <li>
+            <img src="assets/search.svg" alt="search" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
       </nav>
     </header>
 
     <section class="hero">
       <div class="hero-image">
-        <img src="assets/sushi-1" alt="sushi" />
+        <img src="assets/sushi-1.png" alt="sushi" />
         <h2>
           C <br />
           S <br />
@@ -41,18 +52,18 @@
       </div>
       <div class="hero-content">
         <div class="hero-content-info">
-          <h1>Feel the taste of Japanese food</h1>
+          <h1>Sinta o sabor de comida japonesa</h1>
           <p>
-            Feel the taste of the most popular Japanese food from anywhere and
-            anytime.
+            Sinta o verdadeiro gosto de Comida japonesa de
+            qualidade.
           </p>
           <div class="hero-content__buttons">
             <button class="hero-content__order-button">
-              Order Now
+              Encomendar
             </button>
             <button class="hero-content__play-button">
               <img src="assets/play-circle.svg" alt="play" />
-              How to Order
+              Como Encomendar
             </button>
           </div>
         </div>
