@@ -1,3 +1,10 @@
+:root {
+    --cores-titulo: #6f00ff;
+    --cores-padrao: #000000;
+    --cores-hover: #7100bd;
+    --cor-span: #7a07fd;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +39,7 @@ section nav {
 
 section nav .logo {
     font-size: 35px;
-    color: #c73092;
+    color: var(--cores-titulo);
     margin: 5px 0;
     cursor: pointer;
     position: relative;
@@ -40,7 +47,7 @@ section nav .logo {
 }
 
 section nav .logo span {
-    color: blue;
+    color: var(--cor-span);
     text-decoration: underline;
 }
 
@@ -55,10 +62,24 @@ section nav ul li {
 
 section nav ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--cores-padrao);
     transition: 0.2s;
 }
 
 section nav ul li a:hover {
-    color: blueviolet;
+    color: var(--cores-hover);
+}
+section nav .icons i {
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+section nav .icons i:hover {
+    color: var(--cores-hover);
+}
+section .main .main_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
